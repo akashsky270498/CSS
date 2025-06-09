@@ -1,0 +1,4 @@
+- HTML Elements are called selectors.
+- Inline CSS: inline css is used in a HTML page using style attribute.
+- Internal CSS: Internal css means using style tag and place the HTML page's style within it.
+- External CSS: Create a .css file and place all ur styles code inside it.
