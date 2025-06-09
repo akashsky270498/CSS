@@ -2,3 +2,4 @@
 - Inline CSS: inline css is used in a HTML page using style attribute.
 - Internal CSS: Internal css means using style tag and place the HTML page's style within it.
 - External CSS: Create a .css file and place all ur styles code inside it.
+- Selectors: we use selectors to select a element in which we want to apply the css style.

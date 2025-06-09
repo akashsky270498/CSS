@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=4, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+        /* element selector  */
+        main {
+            color: seagreen;
+            background-color: black;
+        }
+
+        /* class selector  */
+        .classSelector {
+            color: skyblue;
+            background-color: black;
+        }
+
+        /* id selector  */
+        #idSelector {
+            color: yellow;
+            background-color: black;
+        }
+
+        /* child selector: the first one  */ 
+        div > p {
+            color: pink;
+            background-color: black;
+        }
+
+        /* descendant selector: any para inside div  */
+        div p {
+            color: blue;
+            background-color: black;;
+        }
+
+        /* universal selector  */
+        *{
+            font-size: 1.0rem;
+            margin: 3px
+        }
+
+        /* Pseudo Selector  */
+        a:visited{
+            color: red;
+        }
+
+        a:hover{
+            color: purple;
+        }
+
+        a:link{
+            color: blue; 
+        }
+
+        a:active{
+            color: rgb(17, 16, 16)
+        }
+        /* first para inside any tag  */
+        p:first-child{
+            color: orange;
+            background-color: black;
+        }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+        voluptates consequatur voluptate iusto molestiae quasi, nostrum a.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </main>
+
+    <div class="classSelector">
+      Lorem ipsum dolor sit amet.
+
+      <article>
+        <p>I m a dive present inside para.</p>
+      </article>
+    </div>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </article>
+    </div>
+
+    <div id="idSelector">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <a href="https://www.google.com">click for google</a><br>
+    <a href="https://www.facebook.com">click for facebook</a>
+  </body>
+</html>
