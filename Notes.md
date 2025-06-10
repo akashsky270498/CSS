@@ -127,4 +127,9 @@ height: 400px;
 
 - `word-break`: Specifies how to break words when they overflow (e.g., `break-all` breaks words anywhere).
 
+
+
 ```
+
+
+inline style > id selector > class or attribute selector > Elelment selector > universal selector
