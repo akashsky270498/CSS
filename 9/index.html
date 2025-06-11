@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow in CSS</title>
+    <style>
+      .box {
+        border: 2px solid red;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 2px 3px 4px 3px rgb(168, 109, 109);
+        display: inline-block;
+        background-color: black;
+        color: red;
+      }
+
+      .para {
+        text-shadow: 5px 3px 2px grey;
+      }
+
+      .focus {
+        border: 2px solid blue; /* A visible blue border around the element */
+        border-radius: 5px; /* Smooth rounded corners */
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+        display: inline-block; /* Allows width, height, padding, margin */
+
+        outline: 3px dashed blue; /* Extra highlight outside the border */
+        outline-offset: 5px; /* Pushes the outline 5px outside the border */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">I am a box</div>
+    <p class="para">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quia eius
+      ducimus eligendi totam doloribus aliquam, error, corrupti voluptas
+      perferendis rerum temporibus! Non, nam quam? Excepturi alias in placeat
+      eligendi deserunt provident delectus consequatur.
+    </p>
+
+    <p class="focus">Lorem ipsum dolor sit.</p>
+  </body>
+</html>
+
+<!--
+box-shadow: h-offset v-offset blur spread color inset/outset;
+text-shadow: h-offset v-offset blur spread color;
+outline: width style color;
+
+- border affects layout whereas outline don't.
+- border can have radius where outline don't it follows border radius.
+- border is inside the element box, outline is outside the border.
+- border is used to style cards and button, outline to focus
+-->
