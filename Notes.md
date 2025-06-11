@@ -225,3 +225,56 @@ height: 400px;
 📏 width: 50%
 -----------------------------------------
 - Width is 50% of the parent element's width.
+
+
+📘 CSS Display Property (Simplified)
+
+-----------------------------------------
+🧱 Block Elements (like <div>)
+-----------------------------------------
+- Take up the full width by default.
+- Always start on a new line.
+- Examples: <div>, <p>, <h1>, etc.
+
+-----------------------------------------
+🔤 Inline Elements (like <span>)
+-----------------------------------------
+- Only take up as much space as needed.
+- Sit side by side (in the same line).
+- Can't set width/height directly.
+- Examples: <span>, <a>, <strong>, etc.
+
+-----------------------------------------
+🔗 display: inline
+-----------------------------------------
+- Makes the element act like inline.
+- Width and height won’t work.
+- Padding/margin only works **left & right**, not **top & bottom**.
+
+-----------------------------------------
+🔲 display: inline-block
+-----------------------------------------
+- Acts like inline (sits in a line) but also supports:
+  ✅ width  
+  ✅ height  
+  ✅ full padding and margin
+- 🔥 Best for styling elements like buttons or small boxes side-by-side.
+
+-----------------------------------------
+🧨 display: none
+-----------------------------------------
+- Completely hides the element **and** removes it from the layout.
+- The space it took is gone.
+
+-----------------------------------------
+👻 visibility: hidden
+-----------------------------------------
+- Hides the element but **keeps its space**.
+- Like invisible but still occupying area.
+
+-----------------------------------------
+🧪 Example:
+-----------------------------------------
+- `display: none` = not there at all.
+- `visibility: hidden` = ghost mode (invisible but still takes space).
+
