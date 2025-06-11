@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflor in CSS</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .box {
+        width: 30vw;
+        height: 10vh;
+        border: 2px solid red;
+        /* overflow: scroll; */
+        /* overflow: auto; */
+        overflow: scroll;
+        white-space: nowrap; /* it means it will not allow the text to fall down */
+        text-overflow: ellipsis;
+        margin: 30px;
+      }
+
+      .box1 {
+        width: 30vw;
+        height: 10vh;
+        border: 3px solid red;
+        /* overflow-x: hidden; */
+        /* overflow-y: scroll; */
+        overflow: hidden auto; /* x y */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      I m a Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+      facilis quos nisi explicabo amet possimus quam voluptates fugit quaerat
+      sed alias repellendus accusantium facere, nulla neque quidem architecto
+      repudiandae vitae dicta cum. Quod quae ullam veritatis voluptatibus maxime
+      quisquam ratione corrupti corporis, esse repellat iure nulla, ipsam dolore
+      totam!
+    </div>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laborum fuga
+      blanditiis quibusdam illo architecto accusantium aperiam nobis amet cum
+      porro, pariatur voluptas temporibus aliquam at, dolore explicabo! Nesciunt
+      iure laudantium omnis, eos impedit non molestias architecto laboriosam
+      exercitationem suscipit illum vitae rem quisquam harum eaque corporis
+      dolore dolorem voluptatem eius reprehenderit enim quidem?
+    </div>
+  </body>
+</html>
