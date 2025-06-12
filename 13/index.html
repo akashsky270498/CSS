@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>varibales in CSS</title>
+    <style>
+       :root {
+         --color: rgb(226, 70, 70);
+         --seccolor: rgb(86, 180, 234);
+         --defopa: 0.7;
+         --defpad: 8px;
+       }
+
+       * {
+         margin: 0;
+         padding: 0;
+       }
+
+       .nav {
+         background-color: var(--color);
+       }
+
+       ul {
+         display: flex;
+       }
+
+       ul li:first-child {
+        --color: rgb(246, 165, 14);
+        background-color: var(--color, blue);
+       }
+      ul li {
+         border: 2px solid var(--seccolor);
+         list-style: none;
+         padding: var(--defpad);
+         opacity: var(--defopa);
+       }
+       .container {
+         background-color: var(--seccolor);
+       }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+      distinctio adipisci ducimus magnam architecto odit autem possimus dolor,
+      fuga magni omnis harum, similique earum molestias quis sapiente. Nesciunt
+      provident laboriosam sint, magnam fugiat a, eius voluptates natus quasi
+      sed aliquid! Quae voluptatem inventore labore ab molestiae?
+    </div>
+  </body>
+</html>
