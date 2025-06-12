@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Media Query</title>
+    <style>
+      body {
+        background-color: rgb(98, 113, 113);
+      }
+
+      @media screen and (orientation: landscape) {
+        body {
+            border: 2px solid yellow;
+        }
+      }
+
+      @media only screen and (max-width: 455px) {
+        body {
+            background-color: greenyellow;
+        }
+
+        .boxes {
+            flex-direction: column;
+        }
+
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+      }
+
+      .boxes {
+        display: flex;
+      }
+
+      .box {
+        border: 2px solid black;
+        height: 344px;
+        width: 344px;
+        padding: 30px;
+        margin: 30px;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div>The color is grey</div>
+
+    <div class="boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
