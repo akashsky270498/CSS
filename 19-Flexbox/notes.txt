@@ -1,0 +1,5 @@
+- if flex-direction is row, the direction in which my items will flow is "main axis(-->)" and the direction in which items will not flow i.e. vertical that is known as "cross axis".
+
+- likewise, if flex direction is column, the direction in which my items will flow is known as "main axis" and the direction in which is will not flow i.e. horizontally that is known as "cross axis(-->)".
+
+- so justify content will center according to main axis always.

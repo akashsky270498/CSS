@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        height: 80vh;
+        display: flex; /* means now we can use the flex properties */
+        /* justify-content: center; by default flex direction is center so it will horizontally center the items */
+        /* align-items: center;vertically center */
+        /* flex-direction: column; */
+        align-items: center;
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* align-content: center; */
+        /* align-content: flex-start; */
+        /* align-content: space-around; */
+
+        /* there is not justify items in flexbox */
+        /* flex-flow: row-reverse; */
+        flex-flow: wrap;
+        /* gap: 35px; */
+        /* row-gap: 5px;
+        column-gap: 10px; */
+        gap: 35px 10px;
+      }
+
+      .item {
+        height: 92px;
+        width: 92px;
+        border: 2px solid black;
+        margin: 4px;
+        background-color: lightcoral;
+        /* flex-grow: 1; */
+      }
+
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+      .order-3 {
+        order: 3;
+      }
+
+      .item1 {
+        /* flex-grow: 2; */
+        flex-shrink: 4; /* remove flex from container */
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item order-1">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item order-2">10</div>
+        <!-- <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">12</div>
+        <div class="item">12</div>
+        <div class="item">12</div> -->
+      </div>
+    </main>
+  </body>
+</html>
