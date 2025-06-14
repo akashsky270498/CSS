@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter in CSS</title>
+    <style>
+        .img1 {
+            filter: blur(100%);
+        }
+
+        .img2 {
+            /* filter: invert(100%); */
+            filter: brightness(0%) 
+            /* filter: grayscale(1) */
+            /* filter: invert(1);*/
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="img1"
+        src="https://www.hindustantimes.com/static-content/1y/cricket-logos/players/virat-kohli.png"
+        alt=""
+      />
+
+      <img
+        class="img2"
+        src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1280,q_80/lsci/db/PICTURES/CMS/401600/401666.jpg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
